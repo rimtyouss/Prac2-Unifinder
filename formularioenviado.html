@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <title>UNIFINDER</title>
+
+    <link rel="stylesheet" href="cssnav.css"/>
+
+
+    <style>
+
+
+        h1 {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            font-family: sfpro;
+        }
+
+        .carta_resultados {
+            background-color: #43698f;
+            width: 500px;
+            height: 300px;
+            position: relative;
+            margin: 50px auto;
+            text-align: center;
+            color: white;
+            padding: 50px;
+            overflow: scroll;
+
+
+        }
+
+
+        .confetti {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(247, 208, 237);
+            position: absolute;
+            border-radius: 50%;
+            animation: confettiscayendose 0.4s ease-in-out infinite alternate;
+        }
+
+        @keyframes confettiscayendose {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(1000px);
+            }
+        }
+
+        h2 {
+            font-family: sfpro;
+
+        }
+
+        h3 {
+            font-family: lemon;
+            font-size: 40px;
+            background-color: whitesmoke;
+        }
+
+        .boton {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-left: 600px;
+            border: none;
+            background: none;
+        }
+
+
+
+        img {
+
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        figcaption {
+            font-size: 25px;
+        }
+
+        .resultados {
+            background-image: url(https://wallpaperaccess.com/full/221825.png);
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <header>
+
+        <nav>
+            <button class="botonesnav"><a href="index.html">UNIFINDER </a></button>
+            <button class="botonesnav"><a href="formulario.html">FORMULARIO </a></button>
+            <button class="botonesnav">
+                <a href="#">CIUDADES</a>
+                <ul class="submenu">
+                    <li><a href="universidades.html">Madrid</a></li>
+                </ul>
+            </button>
+            <button class="botonesnav"><a href="elegir.html">UNIVERSIDADES</a></button>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+
+
+        <h1> Gracias, el formulario ha sido enviado con exito ! </h1>
+
+
+        <div class="resultados">
+
+            <button class="boton" onclick="resultados()">
+                <h3>Ver tus resultados</h3>
+            </button>
+
+            <div id="resultados-container" style="display: none;">
+                <div class="carta_resultados">
+
+                    <h2> ¡Felicidades! Al acabar el test vocacional estás a un paso más cerca de conseguir tus sueños.
+
+                        <br> <br> Área destacada :
+                    </h2>
+
+                    <img src="https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2021/03/1600993945916-1-810x475.jpg"
+                        width="300px" alt="ingenieria">
+
+                    <figcaption><br>Ingenieria <br> 100% <figcaption>
+                            <h5>¿Serás el próximo Albert Einstein? Averígualo <a href="universidades.html">aquí</a>.
+                            </h5>
+
+                            <div class="confetti" style="left: 25%; top: 10%;"></div>
+                            <div class="confetti" style="left: 50%; top: 20%;"></div>
+                            <div class="confetti" style="left: 75%; top: 30%;"></div>
+                            <div class="confetti" style="left: 10%; top: 40%;"></div>
+                            <div class="confetti" style="left: 90%; top: 50%;"></div>
+                </div>
+            </div>
+
+            <script>
+                function resultados() {
+                    document.getElementById("resultados-container").style.display = "block";
+                }
+            </script>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <h4> <br> About Us</h4>
+        <h6> Formulario Enviado - Pagina web de Rim TYOUSS - Practica 2 PAT</h6>
+
+        <h4>Contacto</h4>
+        <form class="footerform">
+            <div class="form-group">
+                <label for="inputEmail">Correo electrónico : </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="inputMensaje"><br> Mensaje : </label>
+                <textarea class="form-control" id="inputMensaje" rows="3"
+                    placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </footer>
+
+
+</body>
+
+
+</html>

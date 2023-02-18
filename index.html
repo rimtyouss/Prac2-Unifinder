@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<link rel="stylesheet" href="cssnav.css" />
+
+
+
+<style>
+    h1 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 100px;
+        font-family: chrusty;
+        font-weight: bold;
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15;
+        font-size: 50px;
+        font-family: sfpro;
+        font-weight: normal;
+        color: #cfe2f3;
+    }
+
+    header {
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/graduation-wishes-1651254203.jpeg?crop=1xw:0.84375xh;center,top);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-family: 'century', sans-serif;
+    }
+
+    .botontest {
+        text-align: center;
+        font-size: 20px;
+        font-family: lemon;
+        background-color: #43698f;
+        height: 50px;
+        width: 200px;
+        margin: auto;
+        outline: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        border-radius: 10px ;
+    }
+
+
+
+    .logo {
+        text-align: center;
+    }
+
+
+    .apartados {
+        display: flex;
+        align-items: center;
+    }
+
+    .apartados2 {
+        font-size: 25px;
+        margin-left: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: justify;
+        margin-right: 20px;
+        font-family: sfpro;
+    }
+    
+   
+</style>
+
+
+<head>
+    <title>UNIFINDER</title>
+</head>
+
+
+
+<body>
+    <header>
+
+        <nav>
+            <button class="botonesnav"><a href="index.html">UNIFINDER </a></button>
+            <button class="botonesnav"><a href="formulario.html">FORMULARIO </a></button>
+            <button class="botonesnav">
+                <a href="#">CIUDADES</a>
+                <ul class="submenu">
+                    <li><a href="universidades.html">Madrid</a></li>
+                </ul>
+            </button>
+            <button class="botonesnav"><a href="elegir.html">UNIVERSIDADES</a></button>
+        </nav>
+
+
+
+
+        <div class="logo">
+            <img src="https://images.vexels.com/media/users/3/203182/isolated/preview/175a6ffbc2f6f2c679da310609e9b224-graduation-cap-icon-cap.png"
+                width="250px" alt="logo">
+        </div>
+
+        <h1> UNIFINDER </h1>
+
+        <h2> La forma más inteligente de elegir tu universidad </h2></br>
+    </header>
+
+    <main>
+
+        <table>
+            <thead>
+                <tr>
+                    <br><br><br>
+
+                    <th>
+                        <div class="apartados">
+                            <div style="font-size: 160px; font-family: 'Oswald', sans-serif; color: #FFEAE8;">01</div>
+                            <div class="apartados2">
+                                INFORMATE</div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="apartados">
+                            <div style="font-size: 160px; font-family: 'Oswald', sans-serif; color: #ECDBFF;">02</div>
+                            <div class="apartados2">
+                                EL TEST DE ORIENTACION VOCACIONAL </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="apartados">
+                            <div style="font-size: 160px; font-family: 'Oswald', sans-serif; color: #D4EDEE;">03</div>
+                            <div class="apartados2">
+                                FORO Y OPINIONES</div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                    <td> <br>
+                        <p>Desde aquí, puede buscar información sobre una universidad específica o crear su propia
+                            búsqueda de universidades personalizada para identificar las instituciones que se ajusten a
+                            sus
+                            requisitos.Si buscas carreras universitarias, estás en el sitio correcto. Aquí tienes
+                            información sobre todas las carreras universitarias de España: todos los grados
+                            universitarios,
+                            de todas las universidades públicas y privadas</p>
+                    </td>
+                    <td> <br>
+                        <p> Si todavía está indeciso sobre en qué parte del mundo estudiar o que carrera escoger, eche
+                            un vistazo a nuestro test de orientacion. Para elegir una carrera o estudio es necesario
+                            conocer
+                            o reconocer para qué somos hábiles y qué cosas nos interesan o atraen. Ese es un primer paso
+                            para luego pasar a la etapa de información y abordar el mundo de las carreras y profesiones.
+                        </p>
+                    </td>
+                    <td> <br>
+                        <p>Todavia estas indeciso y necesitas mas informacion ? Encuentra en cada listado de
+                            universidad opiniones y reseñas de alumnos actuales, antiguos, y hasta profesores!</p>
+                    </td>
+
+
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div>
+            <br><br>
+            <button class="botontest">
+                <a href="formulario.html">HACER EL TEST!</a>
+            </button>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h4> <br> About Us</h4>
+        <h6> Home UNIFINDER - Pagina web de Rim TYOUSS - Practica 2 PAT</h6>
+
+        <h4>Contacto</h4>
+        <form class="footerform">
+            <div class="form-group">
+                <label for="inputEmail">Correo electrónico : </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="inputMensaje"><br> Mensaje : </label>
+                <textarea class="form-control" id="inputMensaje" rows="3"
+                    placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        
+
+    </footer>
+
+
+
+</body>
+
+
+</html>

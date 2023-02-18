@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <title>HAZ EL TEST YA!</title>
+
+    <link rel="stylesheet" href="cssnav.css"/>
+
+
+    <style>
+        header {
+            background-image: url(https://www.fundacioncyd.org/wp-content/uploads/2020/03/Test-de-orientacio%CC%81n-vocacional-y-otras-herramientas.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 200px;
+            font-family: chrusty;
+            font-weight: bold;
+            color: #32618A;
+        }
+
+
+
+        h3{
+            font-size: 15px;
+            font-family: 'century',sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+            background-color: black;
+            margin: auto;
+        }
+
+        legend {
+            font-size: 35px;
+            font-family: lemon;
+            font-weight: bold;
+        }
+
+        label {
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+        }
+
+        input[type="submit"]  {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: #acd1af;
+            height: 50px;
+            width: 170px;
+            margin: auto;
+            outline: none;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="reset"] {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: #ffa590;
+            height: 30px;
+            width: 130px;
+            margin: auto;
+            border:none
+        }
+
+
+
+        .h7
+        {
+            color:black;
+        }
+
+        
+    </style>
+
+
+
+
+    <script><!-- Tema 5: JavaScript --></script> <!-- dar comportamiento a la web-->
+</head>
+
+
+
+<body>
+    <header>
+
+        
+        <nav>
+            <button class="botonesnav"><a href="index.html">UNIFINDER </a></button> 
+            <button class="botonesnav"><a href="formulario.html">FORMULARIO </a></button>
+            <button class="botonesnav">
+                <a href="#">CIUDADES</a>
+                <ul class="submenu">
+                    <li><a href="universidades.html">Madrid</a></li>
+                </ul>
+            </button>
+            <button class="botonesnav"><a href="elegir.html">UNIVERSIDADES</a></button>
+        </nav>
+
+
+
+
+        <h1> <br> TEST DE ORIENTACION VOCACIONAL </h1>
+        <h7 style="margin-left:800px"> hacer el test de verdad que lleva a otra pagina </h7>
+    </header>
+
+    <main>
+
+        <!--<form action="URL absoluta o relativa" method="get o post">-->
+
+            <form action = "formularioenviado.html" method="get">
+            <fieldset>
+                <legend>Test</legend>
+                <!-- PREGUNTA 1-->
+                </p>
+                <p>A parte de los libros que te mandan en la escuela ¿con qué frecuencia lees?
+                <ul>
+                    <li>
+                        <label for="preg1-1">Nunca</label>
+                        <input type="radio" id="preg1-1" name="pregunta1" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg1-2">De vez en cuando</label>
+                        <input type="radio" id="preg1-2" name="pregunta1" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg1-3">Siempre que puedo</label>
+                        <input type="radio" id="preg1-3" name="pregunta1" value="3">
+
+                    </li>
+                </ul>
+                </p>
+
+                <!-- PREGUNTA 2-->
+                <p>¿Qué haces cuando estás enfermo y te mandan tomar un medicamento?
+                <ul>
+                    <li>
+                        <label for="preg2-1">Lo tomo</label>
+                        <input type="radio" id="preg2-1" name="pregunta2" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg2-2">Miro las contraindicaciones</label>
+                        <input type="radio" id="preg2-2" name="pregunta2" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg2-3">Leo el prospecto de arriba a abajo</label>
+                        <input type="radio" id="preg2-3" name="pregunta3" value="3">
+
+                    </li>
+                </ul>
+                </p>
+
+                <!-- PREGUNTA 3-->
+
+                <p>Tu nota media de matemáticas en la preparatoria fue de:
+                <ul>
+                    <li>
+                        <label for="preg3-1">entre 0 y 4</label>
+                        <input type="radio" id="preg3-1" name="pregunta3" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg3-2">entre 4 y 7</label>
+                        <input type="radio" id="preg3-2" name="pregunta3" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg3-3">entre 7 y 10</label>
+                        <input type="radio" id="preg3-3" name="pregunta3" value="3">
+
+                    </li>
+                </ul>
+                </p>
+
+                <!-- PREGUNTA 4-->
+
+                <p>El trato con animales:
+                <ul>
+                    <li>
+                        <label for="preg4-1">Me es indiferente</label>
+                        <input type="radio" id="preg4-1" name="pregunta4" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg4-2">Me resulta interesante</label>
+                        <input type="radio" id="preg4-2" name="pregunta4" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg4-3">Me encanta</label>
+                        <input type="radio" id="preg4-3" name="pregunta4" value="3">
+
+                    </li>
+                </ul>
+                </p>
+
+
+                <!-- PREGUNTA 5-->
+
+                <p>Del 1 al 10 ¿con qué soltura te desenvuelves con la computadora?
+                <ul>
+                    <li>
+                        <label for="preg5-1">de 0 al 5</label>
+                        <input type="radio" id="preg5-1" name="pregunta5" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg5-2">del 5 al 7</label>
+                        <input type="radio" id="preg5-2" name="pregunta5" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg5-3">del 7 al 10</label>
+                        <input type="radio" id="preg5-3" name="pregunta5" value="3">
+
+                    </li>
+                </ul>
+                </p>
+
+                <!-- PREGUNTA 6-->
+
+                <p>¿Estarías de acuerdo en trabajar en una revista de economía escribiendo artículos?
+                <ul>
+                    <li>
+                        <label for="preg6-1">Preferia no tener que hacerlo</label>
+                        <input type="radio" id="preg6-1" name="pregunta6" value="1" required>
+                    </li>
+                    <li>
+                        <label for="preg6-2">Si, me gustaria</label>
+                        <input type="radio" id="preg6-2" name="pregunta6" value="2">
+
+                    </li>
+                    <li>
+                        <label for="preg6-3">Sera un trabajo muy gratificante</label>
+                        <input type="radio" id="preg6-3" name="pregunta6" value="3">
+                    </li>
+                </ul>
+                </p>
+
+
+                    <!-- Botón para enviar -->
+                    <button><input type="submit" value="Enviar formulario"/></button>
+                    <!-- Botón para resetear el formulario -->
+                    <button><input type="reset" value="Limpiar formulario" /></button>
+        </form>
+</body>
+
+
+
+</main>
+
+<footer>
+    <h4> <br> About Us</h4>
+    <h6> Formulario - Pagina web de Rim TYOUSS - Practica 2 PAT</h6>
+
+    <h4>Contacto</h4>
+        <form class="footerform">
+            <div class="form-group">
+                <label for="inputEmail">Correo electrónico : </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="inputMensaje"><br> Mensaje : </label>
+                <textarea class="form-control" id="inputMensaje" rows="3"
+                    placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        
+</footer>
+
+
+
+</body>
+
+
+</html>
